@@ -29,7 +29,7 @@ function createHeader({ onSearch }) {
   // const myIcon = new Image();
   // myIcon.src = Logo;
   // element.appendChild(myIcon);
-  header.innerHTML = '<img myIcon.src = Logo;><h1 class="title">TheMealDB</h1><div class="nav-links"><a><span>Home</span></a><a class="norm">API</a><a class="norm">Forum</a></div>';
+  header.innerHTML = '<img myIcon.src = Logo;><h1 class="title">TheMealDB</h1><div class="nav-links"><a><span>Home</span></a><a class="norm">API</a><a class="norm">Forum</a><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-square-twitter"></i></div>';
   header.appendChild(createSearchBar({ onSearch }));
   return header;
 }
@@ -38,7 +38,8 @@ function createInfo() {
   const infoElement = document.createElement('div');
   infoElement.classList.add('info');
   infoElement.innerHTML = `<h2>Welcome to TheMealDM</h2><p>Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.</p><p>We also offer a free JSON API for anyone wanting to use it, with additional features for subscribers.</p>
-  <button><span class='sp1'>Pay</span><span class='sp2'>Pal</span> <span class='sp3'>Subscribe</span></button><p>Click to Support $2 per month (cancel anytime)</p><p>Currently 50 supporters</p><hr>`;
+  <button><span class='sp1'>Pay</span><span class='sp2'>Pal</span> <span class='sp3'>Subscribe</span></button><p>Click to Support $2 per month (cancel anytime)</p><p>Currently 50 supporters</p><hr><div class="midinfo"><input type='search' placeholder='search' class='searchi' name='searchTerm'>
+  <p> Total Meals: 285 Total Ingredients: 574 Images: 285</p></div><hr>`;
   return infoElement;
 }
 

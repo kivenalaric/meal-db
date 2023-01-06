@@ -41,6 +41,30 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
     background-color: #ffc439;
+    align-items: center;
+  }
+
+  .sp1 {
+    color: #003087;
+    font-weight: 'Open Sans';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .sp2 {
+    color: #3aa5b9;
+    font-weight: 'Open Sans';
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .sp3 {
+    font-size: 14px;
+    animation: slideInLeft 2s ease-in  1;
   }
   
   .search {
@@ -82,8 +106,12 @@ body {
   
   .hero .title {
     min-width: fit-content;
-    font-family: Georgia, Geneva, Tahoma, sans-serif;
     color: #db7900;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 45px;;
+    line-height: 22px;
+    font-style: normal;
   }
 
   .info {
@@ -93,6 +121,19 @@ body {
     display: flex;
     flex-direction: column;
     color: #fff;
+  }
+
+  hr {
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .midinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
   /* .search button {
@@ -118,7 +159,7 @@ body {
   
   .movie {
     height: 200px;
-    width: 310px;
+    width: 330px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,6 +171,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     box-shadow: #00000b 5px 0 10px;
+    margin: auto;
   }
   
   .movie h2 {
@@ -153,8 +195,8 @@ body {
     height: 100%;
     overflow: hidden;
     max-height: fit-content;
-    background-color: rgba(52, 58, 244, 0.548);
-    color: rgb(184, 234, 255);
+    background-color: #ffd8bb3b;
+    color: #312004;
     margin: 0;
     opacity: 0;
     display: flex;
@@ -204,3 +246,12 @@ body {
     color: #fff;
   }
   
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-300px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
