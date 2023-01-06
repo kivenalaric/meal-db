@@ -1,8 +1,8 @@
-const BASE_URL = 'https://www.themealdb.com/api/json/v1/1/';
+const BASE_URL = 'https://www.themealdb.com/api/json/v2/1/';
 
 function getPopularMovies() {
   return fetch(
-    `${BASE_URL}search.php?f=a`,
+    `${BASE_URL}random.php`,
   )
     .then((res) => res.json())
     .then((res) => res.meals);

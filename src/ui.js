@@ -1,4 +1,4 @@
-import './styles/styles.css';
+import './styles/styles.scss';
 // import Facebook from './images/facebook_icon.png';
 // import Twiter from './images/twitter_icon.png';
 // import Logo from './images/logo-small.png';
